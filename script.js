@@ -6,16 +6,16 @@ var mapLeft = [
     [".b41",".b42",".b43",".b44"]
 ];
 $(".gameBegin").click(function(){
-    $("#main").toggle();
-    $("#home").toggle();
+    $("#main").slideToggle()
+    $("#home").slideToggle()
     resetScore();
     if($(".gameKind2").css("display") == 'none') normalGameStart();
     else crazyGameStart();
 })
 var timer;
 $(".homeTool").click(function(){
-    $("#main").toggle();
-    $("#home").toggle();
+    $("#main").slideToggle()
+    $("#home").slideToggle()
     clearInterval(timer);
 })
 /*
