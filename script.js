@@ -18,6 +18,7 @@ $(".homeTool").click(function(){
     $("#home").toggle();
     clearInterval(timer);
 })
+document.documentElement.requestFullscreen();
 /*
 $(".box").text("2048");
 $(".b11").text("2");
