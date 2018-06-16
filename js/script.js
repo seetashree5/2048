@@ -257,6 +257,11 @@ function moveChange(n){
     addNumber();
 }
 
+// 判断游戏结束
+function gameOver(){
+
+}
+
 // 实现WASD操作
 $(document).keypress(function(event){
     var keycode = event.keyCode;
@@ -319,11 +324,6 @@ $("#home").mouseup(function(ev){
             moveChange(1);
     }
 });
-
-// 判断游戏结束
-function gameOver(){
-
-}
 
 //手机触屏移动相关
 var map11 = document.getElementById("map")
